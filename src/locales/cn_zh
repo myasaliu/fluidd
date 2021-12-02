@@ -1,0 +1,321 @@
+app:
+  bedmesh:
+    label:
+      flat_surface: 顯示參考平面
+      mesh_matrix: 網格矩陣
+      probed_matrix: 探測點矩陣
+      profile_name: 設定檔名稱
+      remove_profile: 刪除 %{name} 設定檔
+      scale: 顯示偏差值
+      wireframe: 顯示格線
+    msg:
+      hint: >-
+        如果保存為 %{name} 以外的其他設定資料，您也可以選擇刪除
+         %{name} 設定資料
+      not_found: 網床資訊不存在。
+      not_loaded: 沒有載入
+    tooltip:
+      calibrate: 開始校準，該校準資訊會預設保存為'defalut'
+      delete: 刪除配置，這將重新開機印表機
+      load: 載入配置
+      save: 將校準的配置提交給printer.cfg。這將重新啟動您的印表機
+  chart:
+    label:
+      current: 當前
+      item: 項目
+      power: 電源
+      target: 目標
+    tooltip:
+      help: 按住Shift鍵可縮放。<br />按一下一個專案可在圖形中進行切換。<br/>點擊Power即可在圖形中進行切換。
+  console:
+    label:
+      hide_temp_waits: 隱藏目標溫度
+    placeholder:
+      command: 按'tab'自動補全指令，按'上下'鍵獲取歷史指令，輸入'help' 獲取指令幫助
+  endpoint:
+    error:
+      cant_connect: 出了點問題，Fluidd無法連接到目的地址。確定這是正確的網址？
+      cors_error: 被CORS政策阻止
+      cors_note: >-
+        這可能意味著您需要修改moonraker配置。請參閱有關多印表機設置的<a href=\"%{url}\"
+        target=\"_blank\">文件</a>
+    hint:
+      add_printer: 例如：http://fluiddpi.local
+    msg:
+      trouble: 遇到麻煩？<a href="%{url}" target="_blank">在此處</a> 查看更多資訊。
+    tooltip:
+      endpoint_examples: >-
+        輸入您的API URL。<br />例如：<br/><blockquote>http://fluidd.local,
+        http://192.168.1.150</blockquote>
+  endstop:
+    label:
+      open: 斷開
+      triggered: 觸發
+    msg:
+      subtitle: 使用“刷新”按鈕更新Endstop狀態。
+  file_system:
+    filters:
+      label:
+        print_start_time: 過濾已列印
+        print_start_time_desc: 過濾掉已經列印的專案
+    label:
+      dir_name: 目錄名稱
+      disk_usage: 磁片使用率
+      downloaded: 下載完成
+      file_name: 檔案名
+      transfer_rate: 傳輸速率
+      uploaded: 上傳完成
+    msg:
+      confirm: 確定嗎？這將刪除其中的所有檔和資料夾。
+      not_found: 文件未找到
+      processing: 處理中...
+    overlay:
+      label: <strong>拖動</strong> 一個檔到這裡
+    title:
+      add_dir: 添加目錄
+      add_file: 添加文件
+      download_file: 下載檔案
+      rename_dir: 重命名目錄
+      rename_file: 重命名檔
+      upload_file: 上傳文件
+    tooltip:
+      low_on_space: 磁碟空間不足
+  general:
+    btn:
+      add: 添加
+      add_dir: 添加目錄
+      add_file: 添加文件
+      add_printer: 添加印表機
+      adjust_layout: 調整儀錶板佈局
+      all: 全部
+      calibrate: 校準
+      cancel: 取消
+      clear_profile: 清除設定檔
+      close: 關閉
+      config_reference: 配置參考
+      download: 下載
+      edit: 編輯
+      extrude: 擠出
+      load_all: 全部載入
+      pause: 暫停
+      preheat: 預熱
+      quad_gantry_level: 龍門架調平
+      reboot: 重啟
+      remove: 刪除
+      remove_all: 全部刪除
+      rename: 重命名
+      reprint: 重新列印
+      reset_file: 重置文件
+      reset_layout: 重置佈局
+      restart_firmware: 重啟Firmware
+      restart_service_klipper: 重啟Klipper
+      restart_service_moonraker: 重啟Moonraker
+      resume: 恢復
+      retract: 縮回
+      save: 保存
+      save_as: 另存為
+      save_restart: 保存並重啟
+      shutdown: 關閉
+      socket_refresh: 強制刷新
+      upload: 上傳
+      upload_print: 上傳並列印
+      view: 視圖
+    error:
+      app_setup_link: >-
+        可以找到 Fluidd 設置要求  <a target="_blank"
+        href="%{url}">here.</a>
+      app_warnings_found: 找到％{appName}條警告。
+      components_config: 可以在<a target="_blank" href="%{url}">此處</a>找到Moonraker外掛程式配置。
+      failed_components: Moonraker的外掛程式失敗，請檢查您的日誌，更新您的配置並重新開機moonraker。
+    label:
+      accel_to_decel: 加速到減速
+      acceleration: 加速
+      add_camera: 添加攝影機
+      add_preset: 添加預設
+      api_url: API URL
+      confirm: 確認
+      edit_camera: 編輯攝影機
+      edit_preset: 編輯預設
+      extrude_length: 擠出長度
+      extrude_speed: 擠出速度
+      flow: 流量
+      free: 釋放
+      high: 高
+      host: 主機
+      layout: 層
+      longest_job: 最長的任務
+      low: 低
+      name: 名稱
+      'off': 關閉
+      power: 電源
+      printers: 印表機
+      requested_speed: 請求的速度
+      save_as: 另存為
+      services: 服務
+      speed: 速度
+      sqv: 轉角速度
+      total_filament: 總消耗耗材
+      total_filament_avg: 平均消耗耗材
+      total_jobs: 所有列印任務
+      total_print_time: 合計列印時間
+      total_print_time_avg: 平均列印時間
+      total_time: 合計時間
+      total_time_avg: 平均時間
+      used: 已使用
+      variance: 偏差值
+      velocity: 速度
+      z_offset: Z偏移
+    simple_form:
+      error:
+        invalid_url: 無效的URL
+        max: 最大 %{max}
+        min: 最小 %{min}
+        min_or_0: 最小 %{min} 至 0
+        required: 必填
+      msg:
+        confirm: 確定嗎？
+        confirm_reboot_host: 確定嗎？這將重啟您的系統。
+        confirm_shutdown_host: 確定嗎？這將關閉您的系統。
+    table:
+      header:
+        actions: 動作
+        end_time: 結束時間
+        estimated_time: 估計時間
+        filament: 耗材長度
+        filament_used: 使用長度
+        first_layer_bed_temp: 首層熱床溫度
+        first_layer_extr_temp: 首層擠出溫度
+        first_layer_height: 首層高度
+        height: 高度
+        last_printed: 上次列印時間
+        layer_height: 層高度
+        modified: 修改時間
+        name: 名稱
+        print_duration: 列印時間
+        size: 大小
+        slicer: 切片
+        slicer_version: 切片版本
+        start_time: 開始時間
+        status: 狀態
+        total_duration: 總時長
+    title:
+      add_printer: 添加印表機
+      bedmesh: 網床
+      bedmesh_controls: 網床控制
+      camera: 攝影機
+      config_files: 設定檔
+      configure: 配置
+      console: 控制台
+      endstops: Endstops
+      fans_outputs: 風扇和輸出
+      history: 任務歷史
+      home: 儀錶板
+      jobs: 任務
+      limits: 印表機限制
+      macros: 巨集
+      runout_sensors: Runout感測器
+      settings: 設置
+      stats: 列印狀態
+      temperature: 溫度
+      tool: 工具
+      tune: 調整
+    tooltip:
+      estop: 緊急停止
+  history:
+    msg:
+      confirm: 確定嗎？這將清除所有歷史記錄和印表機統計資訊
+  printer:
+    state:
+      busy: 忙
+      complete: 完成
+      idle: 空閒
+      loading: 載入中
+      paused: 已暫停
+      printing: 列印中
+      ready: 就緒
+      standby: 待機
+  setting:
+    btn:
+      add_camera: 添加攝影機
+      add_thermal_preset: 添加預設
+      reset: 重置
+      select_theme: 選擇主題
+    camera_type_options:
+      mjpegadaptive: MJpegAdaptive
+      mjpegstream: MJpegStream
+      video: IpCamera
+    label:
+      all_off: 全部關閉
+      all_on: 全部打開
+      camera_flip_x: 水準翻轉
+      camera_flip_y: 垂直翻轉
+      camera_stream_type: 視頻流類型
+      camera_url: 攝影機地址
+      dark_mode: 黑暗模式
+      default_extrude_length: 默認擠出長度
+      default_extrude_speed: 預設擠出速度
+      default_toolhead_move_length: 默認打印頭移動距離
+      default_toolhead_xy_speed: 預設打印頭XY軸速度
+      default_toolhead_z_speed: 預設打印頭Z軸速度
+      enable: 啟用
+      enable_notifications: 更新提示
+      fps_target: FPS
+      gcode_coords: 使用GCode座標
+      invert_x_control: 反轉X軸控制
+      invert_y_control: 反轉Y軸控制
+      invert_z_control: 反轉Z軸控制
+      language: 顯示語言
+      primary_color: 主色調
+      printer_name: 印表機名稱
+      reset: 重置設定
+      thermal_preset_name: 預設名稱
+      z_adjust_values: Z軸調整值
+    timer_options:
+      duration: 僅顯示消耗時間
+      filament: 通過耗材估算
+      file: 通過檔估算
+      slicer: 使用切片檔的時間
+    title:
+      camera: 攝影鏡頭
+      general: 一般
+      macros: 巨集
+      theme: 主題
+      thermal_presets: 溫度預設
+      tool: 工具
+    tooltip:
+      gcode_coords: 使用GCode座標位置而不是儀表板上的打印頭座標位置
+  socket:
+    msg:
+      connecting: 連接到moonraker ...
+      no_connection: 沒有moonraker連接。請檢查moonraker的狀態和或刷新。
+  tool:
+    btn:
+      home_x: X
+      home_y: 'Y'
+    tooltip:
+      extruder_disabled: 擠出機操作已被禁用，低於 min_extrude_temp 設置的最低溫度 (%{min}<small>°C</small>)
+      home_xy: Home XY
+      home_z: Home Z
+  version:
+    btn:
+      check_for_updates: 檢查更新
+      finish: 完成
+      update: 更新
+    label:
+      commit_history: 提交歷史
+      commits_on: 提交於
+      committed: 提交完成
+      dirty: 骯髒
+      invalid: 無效
+      package_list: 包列表
+      up_to_date: 最新
+    status:
+      finished: 更新已完成
+      updating: 正在更新...
+    title: 軟體更新
+    tooltip:
+      commit_history: 提交歷史
+      dirty: 本地檔被污染，無法從線上的git庫更新最新代碼
+      invalid: 本地檔無效，無法從線上的git庫更新最新代碼
+      packages: 包
+      release_notes: 發佈通知
